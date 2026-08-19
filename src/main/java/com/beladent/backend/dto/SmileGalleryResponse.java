@@ -1,0 +1,9 @@
+package com.beladent.backend.dto;
+import lombok.Builder;
+import lombok.Getter;
+import java.time.LocalDateTime;
+@Getter @Builder
+public class SmileGalleryResponse {
+    private Long id; private String titleKa; private String titleEn; private String textKa; private String textEn;
+    private String imageUrl; private Integer sortOrder; private Boolean active; private LocalDateTime createdAt; private LocalDateTime updatedAt;
+}

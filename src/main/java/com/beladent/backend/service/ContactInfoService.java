@@ -30,6 +30,11 @@ public class ContactInfoService {
         contactInfo.setLinkedinUrl(request.getLinkedinUrl());
         contactInfo.setYoutubeUrl(request.getYoutubeUrl());
         contactInfo.setGoogleMapsUrl(request.getGoogleMapsUrl());
+        contactInfo.setMondaySaturdayOpen(request.getMondaySaturdayOpen());
+        contactInfo.setMondaySaturdayClose(request.getMondaySaturdayClose());
+        contactInfo.setSundayOpen(request.getSundayOpen());
+        contactInfo.setSundayClose(request.getSundayClose());
+        contactInfo.setSundayClosed(request.isSundayClosed());
 
         return mapToResponse(contactInfoRepository.save(contactInfo));
     }
@@ -54,6 +59,11 @@ public class ContactInfoService {
                 .linkedinUrl(contactInfo.getLinkedinUrl())
                 .youtubeUrl(contactInfo.getYoutubeUrl())
                 .googleMapsUrl(contactInfo.getGoogleMapsUrl())
+                .mondaySaturdayOpen(contactInfo.getMondaySaturdayOpen())
+                .mondaySaturdayClose(contactInfo.getMondaySaturdayClose())
+                .sundayOpen(contactInfo.getSundayOpen())
+                .sundayClose(contactInfo.getSundayClose())
+                .sundayClosed(contactInfo.getSundayClosed() == null || contactInfo.getSundayClosed())
                 .build();
     }
 }

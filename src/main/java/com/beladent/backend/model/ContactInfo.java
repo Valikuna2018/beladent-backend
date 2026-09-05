@@ -34,6 +34,14 @@ public class ContactInfo {
     private String youtubeUrl;
     private String googleMapsUrl;
 
+    private String mondaySaturdayOpen;
+    private String mondaySaturdayClose;
+    private String sundayOpen;
+    private String sundayClose;
+
+    @Builder.Default
+    private Boolean sundayClosed = true;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 

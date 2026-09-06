@@ -40,6 +40,17 @@ public class SiteSettings {
     @Column(columnDefinition = "TEXT")
     private String seoDescriptionEn;
 
+    @Column(columnDefinition = "TEXT") private String servicesSubtitleKa;
+    @Column(columnDefinition = "TEXT") private String servicesSubtitleEn;
+    @Column(columnDefinition = "TEXT") private String doctorsSubtitleKa;
+    @Column(columnDefinition = "TEXT") private String doctorsSubtitleEn;
+    @Column(columnDefinition = "TEXT") private String newsSubtitleKa;
+    @Column(columnDefinition = "TEXT") private String newsSubtitleEn;
+    @Column(columnDefinition = "TEXT") private String vacanciesSubtitleKa;
+    @Column(columnDefinition = "TEXT") private String vacanciesSubtitleEn;
+    @Column(columnDefinition = "TEXT") private String smileGallerySubtitleKa;
+    @Column(columnDefinition = "TEXT") private String smileGallerySubtitleEn;
+
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;

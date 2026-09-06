@@ -25,6 +25,8 @@ public class ContactInfoService {
         contactInfo.setEmail(request.getEmail());
         contactInfo.setAddressKa(request.getAddressKa());
         contactInfo.setAddressEn(request.getAddressEn());
+        contactInfo.setFooterDescriptionKa(request.getFooterDescriptionKa());
+        contactInfo.setFooterDescriptionEn(request.getFooterDescriptionEn());
         contactInfo.setFacebookUrl(request.getFacebookUrl());
         contactInfo.setInstagramUrl(request.getInstagramUrl());
         contactInfo.setLinkedinUrl(request.getLinkedinUrl());
@@ -54,6 +56,8 @@ public class ContactInfoService {
                 .email(contactInfo.getEmail())
                 .addressKa(contactInfo.getAddressKa())
                 .addressEn(contactInfo.getAddressEn())
+                .footerDescriptionKa(contactInfo.getFooterDescriptionKa())
+                .footerDescriptionEn(contactInfo.getFooterDescriptionEn())
                 .facebookUrl(contactInfo.getFacebookUrl())
                 .instagramUrl(contactInfo.getInstagramUrl())
                 .linkedinUrl(contactInfo.getLinkedinUrl())

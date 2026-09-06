@@ -16,6 +16,8 @@ public class ContactInfoResponse {
 
     private String addressKa;
     private String addressEn;
+    private String footerDescriptionKa;
+    private String footerDescriptionEn;
 
     private String facebookUrl;
     private String instagramUrl;

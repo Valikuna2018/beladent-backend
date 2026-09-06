@@ -28,6 +28,12 @@ public class ContactInfo {
     @Column(columnDefinition = "TEXT")
     private String addressEn;
 
+    @Column(columnDefinition = "TEXT")
+    private String footerDescriptionKa;
+
+    @Column(columnDefinition = "TEXT")
+    private String footerDescriptionEn;
+
     private String facebookUrl;
     private String instagramUrl;
     private String linkedinUrl;

@@ -23,4 +23,14 @@ public class SiteSettingsResponse {
 
     private String seoDescriptionKa;
     private String seoDescriptionEn;
+    private String servicesSubtitleKa;
+    private String servicesSubtitleEn;
+    private String doctorsSubtitleKa;
+    private String doctorsSubtitleEn;
+    private String newsSubtitleKa;
+    private String newsSubtitleEn;
+    private String vacanciesSubtitleKa;
+    private String vacanciesSubtitleEn;
+    private String smileGallerySubtitleKa;
+    private String smileGallerySubtitleEn;
 }

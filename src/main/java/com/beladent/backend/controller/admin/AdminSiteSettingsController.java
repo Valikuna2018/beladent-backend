@@ -28,6 +28,16 @@ public class AdminSiteSettingsController {
             @RequestParam(required = false) String seoTitleEn,
             @RequestParam(required = false) String seoDescriptionKa,
             @RequestParam(required = false) String seoDescriptionEn,
+            @RequestParam(required = false) String servicesSubtitleKa,
+            @RequestParam(required = false) String servicesSubtitleEn,
+            @RequestParam(required = false) String doctorsSubtitleKa,
+            @RequestParam(required = false) String doctorsSubtitleEn,
+            @RequestParam(required = false) String newsSubtitleKa,
+            @RequestParam(required = false) String newsSubtitleEn,
+            @RequestParam(required = false) String vacanciesSubtitleKa,
+            @RequestParam(required = false) String vacanciesSubtitleEn,
+            @RequestParam(required = false) String smileGallerySubtitleKa,
+            @RequestParam(required = false) String smileGallerySubtitleEn,
             @RequestParam(value = "logoFile", required = false) MultipartFile logoFile,
             @RequestParam(value = "geoLogoFile", required = false) MultipartFile geoLogoFile,
             @RequestParam(value = "backgroundFile", required = false) MultipartFile backgroundFile,
@@ -42,6 +52,16 @@ public class AdminSiteSettingsController {
         request.setSeoTitleEn(seoTitleEn);
         request.setSeoDescriptionKa(seoDescriptionKa);
         request.setSeoDescriptionEn(seoDescriptionEn);
+        request.setServicesSubtitleKa(servicesSubtitleKa);
+        request.setServicesSubtitleEn(servicesSubtitleEn);
+        request.setDoctorsSubtitleKa(doctorsSubtitleKa);
+        request.setDoctorsSubtitleEn(doctorsSubtitleEn);
+        request.setNewsSubtitleKa(newsSubtitleKa);
+        request.setNewsSubtitleEn(newsSubtitleEn);
+        request.setVacanciesSubtitleKa(vacanciesSubtitleKa);
+        request.setVacanciesSubtitleEn(vacanciesSubtitleEn);
+        request.setSmileGallerySubtitleKa(smileGallerySubtitleKa);
+        request.setSmileGallerySubtitleEn(smileGallerySubtitleEn);
 
         return siteSettingsService.updateWithImages(request, logoFile, geoLogoFile, backgroundFile, backgroundFile2, backgroundFile3);
     }

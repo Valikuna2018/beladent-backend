@@ -43,6 +43,16 @@ public class SiteSettingsService {
 
         settings.setSeoDescriptionKa(request.getSeoDescriptionKa());
         settings.setSeoDescriptionEn(request.getSeoDescriptionEn());
+        settings.setServicesSubtitleKa(request.getServicesSubtitleKa());
+        settings.setServicesSubtitleEn(request.getServicesSubtitleEn());
+        settings.setDoctorsSubtitleKa(request.getDoctorsSubtitleKa());
+        settings.setDoctorsSubtitleEn(request.getDoctorsSubtitleEn());
+        settings.setNewsSubtitleKa(request.getNewsSubtitleKa());
+        settings.setNewsSubtitleEn(request.getNewsSubtitleEn());
+        settings.setVacanciesSubtitleKa(request.getVacanciesSubtitleKa());
+        settings.setVacanciesSubtitleEn(request.getVacanciesSubtitleEn());
+        settings.setSmileGallerySubtitleKa(request.getSmileGallerySubtitleKa());
+        settings.setSmileGallerySubtitleEn(request.getSmileGallerySubtitleEn());
 
         if (logoFile != null && !logoFile.isEmpty()) {
             String newLogoUrl = fileStorageService.saveFile(logoFile, "logo");
@@ -112,6 +122,16 @@ public class SiteSettingsService {
                 .seoTitleEn(settings.getSeoTitleEn())
                 .seoDescriptionKa(settings.getSeoDescriptionKa())
                 .seoDescriptionEn(settings.getSeoDescriptionEn())
+                .servicesSubtitleKa(settings.getServicesSubtitleKa())
+                .servicesSubtitleEn(settings.getServicesSubtitleEn())
+                .doctorsSubtitleKa(settings.getDoctorsSubtitleKa())
+                .doctorsSubtitleEn(settings.getDoctorsSubtitleEn())
+                .newsSubtitleKa(settings.getNewsSubtitleKa())
+                .newsSubtitleEn(settings.getNewsSubtitleEn())
+                .vacanciesSubtitleKa(settings.getVacanciesSubtitleKa())
+                .vacanciesSubtitleEn(settings.getVacanciesSubtitleEn())
+                .smileGallerySubtitleKa(settings.getSmileGallerySubtitleKa())
+                .smileGallerySubtitleEn(settings.getSmileGallerySubtitleEn())
                 .build();
     }
 }

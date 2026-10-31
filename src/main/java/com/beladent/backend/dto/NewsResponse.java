@@ -18,6 +18,8 @@ public class NewsResponse {
     private String textEn;
 
     private String imageUrl;
+    private String imageAltKa;
+    private String imageAltEn;
 
     private Integer sortOrder;
 

@@ -7,6 +7,8 @@ public class SmileGalleryRequest {
     private String titleEn;
     private String textKa;
     private String textEn;
+    private String imageAltKa;
+    private String imageAltEn;
     private Integer sortOrder;
     private Boolean active;
 }

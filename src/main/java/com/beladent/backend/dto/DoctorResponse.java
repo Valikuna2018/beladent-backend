@@ -25,6 +25,8 @@ public class DoctorResponse {
     private String descriptionEn;
 
     private String imageUrl;
+    private String imageAltKa;
+    private String imageAltEn;
 
     private Integer sortOrder;
     private Boolean active;

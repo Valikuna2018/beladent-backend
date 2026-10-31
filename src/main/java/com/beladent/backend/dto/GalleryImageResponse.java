@@ -15,6 +15,8 @@ public class GalleryImageResponse {
     private String titleEn;
 
     private String imageUrl;
+    private String imageAltKa;
+    private String imageAltEn;
 
     private Integer sortOrder;
 

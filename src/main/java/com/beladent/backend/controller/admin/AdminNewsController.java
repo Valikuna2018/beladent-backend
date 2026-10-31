@@ -23,6 +23,8 @@ public class AdminNewsController {
             @RequestParam String titleEn,
             @RequestParam(required = false) String textKa,
             @RequestParam(required = false) String textEn,
+            @RequestParam(required = false) String imageAltKa,
+            @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
             @RequestParam(required = false) Boolean active,
             @RequestParam(value = "file", required = false) MultipartFile file
@@ -32,6 +34,8 @@ public class AdminNewsController {
         request.setTitleEn(titleEn);
         request.setTextKa(textKa);
         request.setTextEn(textEn);
+        request.setImageAltKa(imageAltKa);
+        request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
         request.setActive(active);
 
@@ -45,6 +49,8 @@ public class AdminNewsController {
             @RequestParam String titleEn,
             @RequestParam(required = false) String textKa,
             @RequestParam(required = false) String textEn,
+            @RequestParam(required = false) String imageAltKa,
+            @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
             @RequestParam(required = false) Boolean active,
             @RequestParam(value = "file", required = false) MultipartFile file
@@ -54,6 +60,8 @@ public class AdminNewsController {
         request.setTitleEn(titleEn);
         request.setTextKa(textKa);
         request.setTextEn(textEn);
+        request.setImageAltKa(imageAltKa);
+        request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
         request.setActive(active);
 

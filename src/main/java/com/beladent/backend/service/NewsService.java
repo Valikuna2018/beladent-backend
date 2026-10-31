@@ -32,6 +32,8 @@ public class NewsService {
                 .textKa(request.getTextKa())
                 .textEn(request.getTextEn())
                 .imageUrl(imageUrl)
+                .imageAltKa(request.getImageAltKa())
+                .imageAltEn(request.getImageAltEn())
                 .sortOrder(request.getSortOrder())
                 .active(request.getActive())
                 .build();
@@ -50,6 +52,8 @@ public class NewsService {
         news.setTitleEn(request.getTitleEn());
         news.setTextKa(request.getTextKa());
         news.setTextEn(request.getTextEn());
+        news.setImageAltKa(request.getImageAltKa());
+        news.setImageAltEn(request.getImageAltEn());
         news.setSortOrder(request.getSortOrder());
         news.setActive(request.getActive());
 
@@ -106,6 +110,8 @@ public class NewsService {
                 .textKa(news.getTextKa())
                 .textEn(news.getTextEn())
                 .imageUrl(news.getImageUrl())
+                .imageAltKa(news.getImageAltKa())
+                .imageAltEn(news.getImageAltEn())
                 .sortOrder(news.getSortOrder())
                 .active(news.getActive())
                 .createdAt(news.getCreatedAt())

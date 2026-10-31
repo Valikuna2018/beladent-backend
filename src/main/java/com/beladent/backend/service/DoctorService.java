@@ -66,6 +66,8 @@ public class DoctorService {
                 .descriptionKa(request.getDescriptionKa())
                 .descriptionEn(request.getDescriptionEn())
                 .imageUrl(request.getImageUrl())
+                .imageAltKa(request.getImageAltKa())
+                .imageAltEn(request.getImageAltEn())
                 .sortOrder(request.getSortOrder())
                 .active(request.getActive())
                 .build();
@@ -91,6 +93,8 @@ public class DoctorService {
         doctor.setDescriptionKa(request.getDescriptionKa());
         doctor.setDescriptionEn(request.getDescriptionEn());
         doctor.setImageUrl(request.getImageUrl());
+        doctor.setImageAltKa(request.getImageAltKa());
+        doctor.setImageAltEn(request.getImageAltEn());
         doctor.setSortOrder(request.getSortOrder());
         doctor.setActive(request.getActive());
 
@@ -158,6 +162,8 @@ public class DoctorService {
                 .descriptionKa(doctor.getDescriptionKa())
                 .descriptionEn(doctor.getDescriptionEn())
                 .imageUrl(doctor.getImageUrl())
+                .imageAltKa(doctor.getImageAltKa())
+                .imageAltEn(doctor.getImageAltEn())
                 .sortOrder(doctor.getSortOrder())
                 .active(doctor.getActive())
                 .createdAt(doctor.getCreatedAt())

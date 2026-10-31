@@ -1,0 +1,53 @@
+services:
+  - type: web
+    name: beladent-backend
+    runtime: docker
+    domains:
+      - api.beladent.ge
+    healthCheckPath: /api/public/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: DATABASE_HOST
+        fromDatabase:
+          name: beladent-db
+          property: host
+      - key: DATABASE_PORT
+        fromDatabase:
+          name: beladent-db
+          property: port
+      - key: DATABASE_NAME
+        fromDatabase:
+          name: beladent-db
+          property: database
+      - key: DATABASE_USERNAME
+        fromDatabase:
+          name: beladent-db
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: beladent-db
+          property: password
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRATION
+        value: 86400000
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://beladent.ge,https://www.beladent.ge
+      - key: UPLOAD_DIR
+        value: /var/data/uploads
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+    disk:
+      name: beladent-uploads
+      mountPath: /var/data
+      sizeGB: 1
+
+databases:
+  - name: beladent-db
+    databaseName: beladent
+    user: beladent

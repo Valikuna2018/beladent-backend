@@ -21,6 +21,8 @@ public class AdminGalleryImageController {
     public GalleryImageResponse create(
             @RequestParam(required = false) String titleKa,
             @RequestParam(required = false) String titleEn,
+            @RequestParam(required = false) String imageAltKa,
+            @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
             @RequestParam(required = false) Boolean active,
             @RequestParam(value = "file", required = false) MultipartFile file
@@ -28,6 +30,8 @@ public class AdminGalleryImageController {
         GalleryImageRequest request = new GalleryImageRequest();
         request.setTitleKa(titleKa);
         request.setTitleEn(titleEn);
+        request.setImageAltKa(imageAltKa);
+        request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
         request.setActive(active);
 
@@ -39,6 +43,8 @@ public class AdminGalleryImageController {
             @PathVariable Long id,
             @RequestParam(required = false) String titleKa,
             @RequestParam(required = false) String titleEn,
+            @RequestParam(required = false) String imageAltKa,
+            @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
             @RequestParam(required = false) Boolean active,
             @RequestParam(value = "file", required = false) MultipartFile file
@@ -46,6 +52,8 @@ public class AdminGalleryImageController {
         GalleryImageRequest request = new GalleryImageRequest();
         request.setTitleKa(titleKa);
         request.setTitleEn(titleEn);
+        request.setImageAltKa(imageAltKa);
+        request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
         request.setActive(active);
 

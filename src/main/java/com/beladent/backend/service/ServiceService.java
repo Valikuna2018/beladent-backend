@@ -31,6 +31,8 @@ public class ServiceService {
                 .descriptionKa(request.getDescriptionKa())
                 .descriptionEn(request.getDescriptionEn())
                 .imageUrl(request.getImageUrl())
+                .imageAltKa(request.getImageAltKa())
+                .imageAltEn(request.getImageAltEn())
                 .sortOrder(request.getSortOrder())
                 .active(request.getActive())
                 .build();
@@ -52,6 +54,8 @@ public class ServiceService {
         service.setDescriptionKa(request.getDescriptionKa());
         service.setDescriptionEn(request.getDescriptionEn());
         service.setImageUrl(request.getImageUrl());
+        service.setImageAltKa(request.getImageAltKa());
+        service.setImageAltEn(request.getImageAltEn());
         service.setSortOrder(request.getSortOrder());
         service.setActive(request.getActive());
 
@@ -115,6 +119,8 @@ public class ServiceService {
                 .descriptionKa(service.getDescriptionKa())
                 .descriptionEn(service.getDescriptionEn())
                 .imageUrl(service.getImageUrl())
+                .imageAltKa(service.getImageAltKa())
+                .imageAltEn(service.getImageAltEn())
                 .sortOrder(service.getSortOrder())
                 .active(service.getActive())
                 .createdAt(service.getCreatedAt())

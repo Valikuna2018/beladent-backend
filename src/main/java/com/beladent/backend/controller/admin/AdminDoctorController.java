@@ -28,6 +28,8 @@ public class AdminDoctorController {
             @RequestParam(required = false) String specializationEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
+            @RequestParam(required = false) String imageAltKa,
+            @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
             @RequestParam(required = false) Boolean active,
             @RequestParam(value = "file", required = false) MultipartFile file
@@ -42,6 +44,8 @@ public class AdminDoctorController {
         request.setSpecializationEn(specializationEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
+        request.setImageAltKa(imageAltKa);
+        request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
         request.setActive(active);
 
@@ -60,6 +64,8 @@ public class AdminDoctorController {
             @RequestParam(required = false) String specializationEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
+            @RequestParam(required = false) String imageAltKa,
+            @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
             @RequestParam(required = false) Boolean active,
             @RequestParam(value = "file", required = false) MultipartFile file
@@ -74,6 +80,8 @@ public class AdminDoctorController {
         request.setSpecializationEn(specializationEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
+        request.setImageAltKa(imageAltKa);
+        request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
         request.setActive(active);
 

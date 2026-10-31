@@ -19,6 +19,8 @@ public class GalleryImage {
     private Long id;
 
     private String imageUrl;
+    private String imageAltKa;
+    private String imageAltEn;
 
     private String titleKa;
     private String titleEn;

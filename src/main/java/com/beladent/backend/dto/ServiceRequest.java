@@ -25,6 +25,10 @@ public class ServiceRequest {
     private String descriptionEn;
 
     private String imageUrl;
+    @Size(max = 255, message = "Georgian image alt text is too long")
+    private String imageAltKa;
+    @Size(max = 255, message = "English image alt text is too long")
+    private String imageAltEn;
     private Integer sortOrder;
     private Boolean active;
 }

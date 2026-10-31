@@ -12,6 +12,8 @@ public class SmileGalleryItem {
     @Column(columnDefinition="TEXT") private String textKa;
     @Column(columnDefinition="TEXT") private String textEn;
     private String imageUrl;
+    private String imageAltKa;
+    private String imageAltEn;
     private Integer sortOrder;
     private Boolean active;
     private LocalDateTime createdAt;

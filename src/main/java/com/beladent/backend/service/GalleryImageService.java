@@ -30,6 +30,8 @@ public class GalleryImageService {
                 .titleKa(request.getTitleKa())
                 .titleEn(request.getTitleEn())
                 .imageUrl(imageUrl)
+                .imageAltKa(request.getImageAltKa())
+                .imageAltEn(request.getImageAltEn())
                 .sortOrder(request.getSortOrder())
                 .active(request.getActive())
                 .build();
@@ -46,6 +48,8 @@ public class GalleryImageService {
 
         image.setTitleKa(request.getTitleKa());
         image.setTitleEn(request.getTitleEn());
+        image.setImageAltKa(request.getImageAltKa());
+        image.setImageAltEn(request.getImageAltEn());
         image.setSortOrder(request.getSortOrder());
         image.setActive(request.getActive());
 
@@ -100,6 +104,8 @@ public class GalleryImageService {
                 .titleKa(image.getTitleKa())
                 .titleEn(image.getTitleEn())
                 .imageUrl(image.getImageUrl())
+                .imageAltKa(image.getImageAltKa())
+                .imageAltEn(image.getImageAltEn())
                 .sortOrder(image.getSortOrder())
                 .active(image.getActive())
                 .createdAt(image.getCreatedAt())

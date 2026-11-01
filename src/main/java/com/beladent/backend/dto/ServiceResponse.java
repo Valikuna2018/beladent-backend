@@ -15,6 +15,9 @@ public class ServiceResponse {
     private String titleKa;
     private String titleEn;
 
+    private String shortDescriptionKa;
+    private String shortDescriptionEn;
+
     private String descriptionKa;
     private String descriptionEn;
 

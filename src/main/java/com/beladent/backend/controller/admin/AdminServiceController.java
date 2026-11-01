@@ -22,6 +22,8 @@ public class AdminServiceController {
             @RequestParam String slug,
             @RequestParam String titleKa,
             @RequestParam String titleEn,
+            @RequestParam(required = false) String shortDescriptionKa,
+            @RequestParam(required = false) String shortDescriptionEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
             @RequestParam(required = false) String imageAltKa,
@@ -34,6 +36,8 @@ public class AdminServiceController {
         request.setSlug(slug);
         request.setTitleKa(titleKa);
         request.setTitleEn(titleEn);
+        request.setShortDescriptionKa(shortDescriptionKa);
+        request.setShortDescriptionEn(shortDescriptionEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
         request.setImageAltKa(imageAltKa);
@@ -50,6 +54,8 @@ public class AdminServiceController {
             @RequestParam String slug,
             @RequestParam String titleKa,
             @RequestParam String titleEn,
+            @RequestParam(required = false) String shortDescriptionKa,
+            @RequestParam(required = false) String shortDescriptionEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
             @RequestParam(required = false) String imageAltKa,
@@ -62,6 +68,8 @@ public class AdminServiceController {
         request.setSlug(slug);
         request.setTitleKa(titleKa);
         request.setTitleEn(titleEn);
+        request.setShortDescriptionKa(shortDescriptionKa);
+        request.setShortDescriptionEn(shortDescriptionEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
         request.setImageAltKa(imageAltKa);

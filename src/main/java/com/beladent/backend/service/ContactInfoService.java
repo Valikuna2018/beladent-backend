@@ -34,6 +34,11 @@ public class ContactInfoService {
         contactInfo.setGoogleMapsUrl(request.getGoogleMapsUrl());
         contactInfo.setMondaySaturdayOpen(request.getMondaySaturdayOpen());
         contactInfo.setMondaySaturdayClose(request.getMondaySaturdayClose());
+        contactInfo.setMondayFridayOpen(request.getMondayFridayOpen());
+        contactInfo.setMondayFridayClose(request.getMondayFridayClose());
+        contactInfo.setSaturdayOpen(request.getSaturdayOpen());
+        contactInfo.setSaturdayClose(request.getSaturdayClose());
+        contactInfo.setSaturdayClosed(request.isSaturdayClosed());
         contactInfo.setSundayOpen(request.getSundayOpen());
         contactInfo.setSundayClose(request.getSundayClose());
         contactInfo.setSundayClosed(request.isSundayClosed());
@@ -65,6 +70,11 @@ public class ContactInfoService {
                 .googleMapsUrl(contactInfo.getGoogleMapsUrl())
                 .mondaySaturdayOpen(contactInfo.getMondaySaturdayOpen())
                 .mondaySaturdayClose(contactInfo.getMondaySaturdayClose())
+                .mondayFridayOpen(contactInfo.getMondayFridayOpen() != null ? contactInfo.getMondayFridayOpen() : contactInfo.getMondaySaturdayOpen())
+                .mondayFridayClose(contactInfo.getMondayFridayClose() != null ? contactInfo.getMondayFridayClose() : contactInfo.getMondaySaturdayClose())
+                .saturdayOpen(contactInfo.getSaturdayOpen() != null ? contactInfo.getSaturdayOpen() : contactInfo.getMondaySaturdayOpen())
+                .saturdayClose(contactInfo.getSaturdayClose() != null ? contactInfo.getSaturdayClose() : contactInfo.getMondaySaturdayClose())
+                .saturdayClosed(contactInfo.getSaturdayClosed() != null && contactInfo.getSaturdayClosed())
                 .sundayOpen(contactInfo.getSundayOpen())
                 .sundayClose(contactInfo.getSundayClose())
                 .sundayClosed(contactInfo.getSundayClosed() == null || contactInfo.getSundayClosed())

@@ -42,6 +42,13 @@ public class ContactInfo {
 
     private String mondaySaturdayOpen;
     private String mondaySaturdayClose;
+    private String mondayFridayOpen;
+    private String mondayFridayClose;
+    private String saturdayOpen;
+    private String saturdayClose;
+
+    @Builder.Default
+    private Boolean saturdayClosed = false;
     private String sundayOpen;
     private String sundayClose;
 

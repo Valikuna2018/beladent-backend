@@ -28,6 +28,8 @@ public class ServiceService {
                 .slug(request.getSlug())
                 .titleKa(request.getTitleKa())
                 .titleEn(request.getTitleEn())
+                .shortDescriptionKa(request.getShortDescriptionKa())
+                .shortDescriptionEn(request.getShortDescriptionEn())
                 .descriptionKa(request.getDescriptionKa())
                 .descriptionEn(request.getDescriptionEn())
                 .imageUrl(request.getImageUrl())
@@ -51,6 +53,8 @@ public class ServiceService {
         service.setSlug(request.getSlug());
         service.setTitleKa(request.getTitleKa());
         service.setTitleEn(request.getTitleEn());
+        service.setShortDescriptionKa(request.getShortDescriptionKa());
+        service.setShortDescriptionEn(request.getShortDescriptionEn());
         service.setDescriptionKa(request.getDescriptionKa());
         service.setDescriptionEn(request.getDescriptionEn());
         service.setImageUrl(request.getImageUrl());
@@ -116,6 +120,8 @@ public class ServiceService {
                 .slug(service.getSlug())
                 .titleKa(service.getTitleKa())
                 .titleEn(service.getTitleEn())
+                .shortDescriptionKa(service.getShortDescriptionKa())
+                .shortDescriptionEn(service.getShortDescriptionEn())
                 .descriptionKa(service.getDescriptionKa())
                 .descriptionEn(service.getDescriptionEn())
                 .imageUrl(service.getImageUrl())

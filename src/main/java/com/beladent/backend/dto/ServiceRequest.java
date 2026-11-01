@@ -18,6 +18,12 @@ public class ServiceRequest {
     @NotBlank(message = "English title is required")
     private String titleEn;
 
+    @Size(max = 1000, message = "Georgian short description is too long")
+    private String shortDescriptionKa;
+
+    @Size(max = 1000, message = "English short description is too long")
+    private String shortDescriptionEn;
+
     @Size(max = 5000, message = "Georgian description is too long")
     private String descriptionKa;
 

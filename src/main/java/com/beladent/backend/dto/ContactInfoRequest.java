@@ -27,6 +27,11 @@ public class ContactInfoRequest {
     private String googleMapsUrl;
     private String mondaySaturdayOpen;
     private String mondaySaturdayClose;
+    private String mondayFridayOpen;
+    private String mondayFridayClose;
+    private String saturdayOpen;
+    private String saturdayClose;
+    private boolean saturdayClosed;
     private String sundayOpen;
     private String sundayClose;
     private boolean sundayClosed;

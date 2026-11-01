@@ -25,6 +25,12 @@ public class Service {
     private String titleEn;
 
     @Column(columnDefinition = "TEXT")
+    private String shortDescriptionKa;
+
+    @Column(columnDefinition = "TEXT")
+    private String shortDescriptionEn;
+
+    @Column(columnDefinition = "TEXT")
     private String descriptionKa;
 
     @Column(columnDefinition = "TEXT")

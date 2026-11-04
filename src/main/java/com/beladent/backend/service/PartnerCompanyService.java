@@ -19,7 +19,7 @@ public class PartnerCompanyService {
     public PartnerCompanyResponse create(PartnerCompanyRequest request, MultipartFile file) {
         if (file == null || file.isEmpty()) throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Partner image is required");
         PartnerCompany partner = PartnerCompany.builder()
-                .name(blankToNull(request.getName()))
+                .name(legacyName(request)).nameKa(blankToNull(request.getNameKa())).nameEn(blankToNull(request.getNameEn()))
                 .imageUrl(fileStorageService.saveFile(file, "partners"))
                 .sortOrder(request.getSortOrder()).active(request.getActive()).build();
         return map(repository.save(partner));
@@ -28,7 +28,9 @@ public class PartnerCompanyService {
     public PartnerCompanyResponse update(Long id, PartnerCompanyRequest request, MultipartFile file) {
         PartnerCompany partner = repository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Partner not found"));
-        partner.setName(blankToNull(request.getName()));
+        partner.setName(legacyName(request));
+        partner.setNameKa(blankToNull(request.getNameKa()));
+        partner.setNameEn(blankToNull(request.getNameEn()));
         partner.setSortOrder(request.getSortOrder());
         partner.setActive(request.getActive());
         if (file != null && !file.isEmpty()) {
@@ -52,8 +54,17 @@ public class PartnerCompanyService {
     public List<PartnerCompanyResponse> getAllForAdmin() { return repository.findAllByOrderBySortOrderAsc().stream().map(this::map).toList(); }
     public List<PartnerCompanyResponse> getAllActive() { return repository.findByActiveTrueOrderBySortOrderAsc().stream().map(this::map).toList(); }
     private String blankToNull(String value) { return value == null || value.isBlank() ? null : value.trim(); }
+    private String legacyName(PartnerCompanyRequest request) {
+        String legacy = blankToNull(request.getName());
+        if (legacy != null) return legacy;
+        String georgian = blankToNull(request.getNameKa());
+        return georgian != null ? georgian : blankToNull(request.getNameEn());
+    }
     private PartnerCompanyResponse map(PartnerCompany item) {
-        return PartnerCompanyResponse.builder().id(item.getId()).name(item.getName()).imageUrl(item.getImageUrl())
+        return PartnerCompanyResponse.builder().id(item.getId()).name(item.getName())
+                .nameKa(item.getNameKa() != null ? item.getNameKa() : item.getName())
+                .nameEn(item.getNameEn() != null ? item.getNameEn() : item.getName())
+                .imageUrl(item.getImageUrl())
                 .sortOrder(item.getSortOrder()).active(item.getActive()).createdAt(item.getCreatedAt()).updatedAt(item.getUpdatedAt()).build();
     }
 }

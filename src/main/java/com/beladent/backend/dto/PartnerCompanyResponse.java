@@ -8,6 +8,8 @@ import java.time.LocalDateTime;
 public class PartnerCompanyResponse {
     private Long id;
     private String name;
+    private String nameKa;
+    private String nameEn;
     private String imageUrl;
     private Integer sortOrder;
     private Boolean active;

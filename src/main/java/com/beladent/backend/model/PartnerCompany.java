@@ -11,6 +11,8 @@ public class PartnerCompany {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String nameKa;
+    private String nameEn;
     private String imageUrl;
     private Integer sortOrder;
     private Boolean active;

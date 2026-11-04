@@ -26,6 +26,10 @@ public class AdminServiceController {
             @RequestParam(required = false) String shortDescriptionEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
+            @RequestParam(required = false) String seoTitleKa,
+            @RequestParam(required = false) String seoTitleEn,
+            @RequestParam(required = false) String metaDescriptionKa,
+            @RequestParam(required = false) String metaDescriptionEn,
             @RequestParam(required = false) String imageAltKa,
             @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
@@ -40,6 +44,8 @@ public class AdminServiceController {
         request.setShortDescriptionEn(shortDescriptionEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
+        request.setSeoTitleKa(seoTitleKa); request.setSeoTitleEn(seoTitleEn);
+        request.setMetaDescriptionKa(metaDescriptionKa); request.setMetaDescriptionEn(metaDescriptionEn);
         request.setImageAltKa(imageAltKa);
         request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
@@ -58,6 +64,10 @@ public class AdminServiceController {
             @RequestParam(required = false) String shortDescriptionEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
+            @RequestParam(required = false) String seoTitleKa,
+            @RequestParam(required = false) String seoTitleEn,
+            @RequestParam(required = false) String metaDescriptionKa,
+            @RequestParam(required = false) String metaDescriptionEn,
             @RequestParam(required = false) String imageAltKa,
             @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
@@ -72,6 +82,8 @@ public class AdminServiceController {
         request.setShortDescriptionEn(shortDescriptionEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
+        request.setSeoTitleKa(seoTitleKa); request.setSeoTitleEn(seoTitleEn);
+        request.setMetaDescriptionKa(metaDescriptionKa); request.setMetaDescriptionEn(metaDescriptionEn);
         request.setImageAltKa(imageAltKa);
         request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);

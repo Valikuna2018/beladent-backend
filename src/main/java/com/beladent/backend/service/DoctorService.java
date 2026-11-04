@@ -65,6 +65,8 @@ public class DoctorService {
                 .specializationEn(request.getSpecializationEn())
                 .descriptionKa(request.getDescriptionKa())
                 .descriptionEn(request.getDescriptionEn())
+                .seoTitleKa(request.getSeoTitleKa()).seoTitleEn(request.getSeoTitleEn())
+                .metaDescriptionKa(request.getMetaDescriptionKa()).metaDescriptionEn(request.getMetaDescriptionEn())
                 .imageUrl(request.getImageUrl())
                 .imageAltKa(request.getImageAltKa())
                 .imageAltEn(request.getImageAltEn())
@@ -92,6 +94,10 @@ public class DoctorService {
         doctor.setSpecializationEn(request.getSpecializationEn());
         doctor.setDescriptionKa(request.getDescriptionKa());
         doctor.setDescriptionEn(request.getDescriptionEn());
+        doctor.setSeoTitleKa(request.getSeoTitleKa());
+        doctor.setSeoTitleEn(request.getSeoTitleEn());
+        doctor.setMetaDescriptionKa(request.getMetaDescriptionKa());
+        doctor.setMetaDescriptionEn(request.getMetaDescriptionEn());
         doctor.setImageUrl(request.getImageUrl());
         doctor.setImageAltKa(request.getImageAltKa());
         doctor.setImageAltEn(request.getImageAltEn());
@@ -161,6 +167,8 @@ public class DoctorService {
                 .specializationEn(doctor.getSpecializationEn())
                 .descriptionKa(doctor.getDescriptionKa())
                 .descriptionEn(doctor.getDescriptionEn())
+                .seoTitleKa(doctor.getSeoTitleKa()).seoTitleEn(doctor.getSeoTitleEn())
+                .metaDescriptionKa(doctor.getMetaDescriptionKa()).metaDescriptionEn(doctor.getMetaDescriptionEn())
                 .imageUrl(doctor.getImageUrl())
                 .imageAltKa(doctor.getImageAltKa())
                 .imageAltEn(doctor.getImageAltEn())

@@ -63,7 +63,7 @@ public class PartnerCompanyService {
     private PartnerCompanyResponse map(PartnerCompany item) {
         return PartnerCompanyResponse.builder().id(item.getId()).name(item.getName())
                 .nameKa(item.getNameKa() != null ? item.getNameKa() : item.getName())
-                .nameEn(item.getNameEn() != null ? item.getNameEn() : item.getName())
+                .nameEn(item.getNameEn())
                 .imageUrl(item.getImageUrl())
                 .sortOrder(item.getSortOrder()).active(item.getActive()).createdAt(item.getCreatedAt()).updatedAt(item.getUpdatedAt()).build();
     }

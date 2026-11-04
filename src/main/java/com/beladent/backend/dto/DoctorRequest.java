@@ -36,6 +36,11 @@ public class DoctorRequest {
     @Size(max = 5000, message = "English description is too long")
     private String descriptionEn;
 
+    @Size(max = 70) private String seoTitleKa;
+    @Size(max = 70) private String seoTitleEn;
+    @Size(max = 170) private String metaDescriptionKa;
+    @Size(max = 170) private String metaDescriptionEn;
+
     private String imageUrl;
     @Size(max = 255, message = "Georgian image alt text is too long")
     private String imageAltKa;

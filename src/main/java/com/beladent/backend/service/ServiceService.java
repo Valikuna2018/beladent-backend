@@ -32,6 +32,8 @@ public class ServiceService {
                 .shortDescriptionEn(request.getShortDescriptionEn())
                 .descriptionKa(request.getDescriptionKa())
                 .descriptionEn(request.getDescriptionEn())
+                .seoTitleKa(request.getSeoTitleKa()).seoTitleEn(request.getSeoTitleEn())
+                .metaDescriptionKa(request.getMetaDescriptionKa()).metaDescriptionEn(request.getMetaDescriptionEn())
                 .imageUrl(request.getImageUrl())
                 .imageAltKa(request.getImageAltKa())
                 .imageAltEn(request.getImageAltEn())
@@ -57,6 +59,10 @@ public class ServiceService {
         service.setShortDescriptionEn(request.getShortDescriptionEn());
         service.setDescriptionKa(request.getDescriptionKa());
         service.setDescriptionEn(request.getDescriptionEn());
+        service.setSeoTitleKa(request.getSeoTitleKa());
+        service.setSeoTitleEn(request.getSeoTitleEn());
+        service.setMetaDescriptionKa(request.getMetaDescriptionKa());
+        service.setMetaDescriptionEn(request.getMetaDescriptionEn());
         service.setImageUrl(request.getImageUrl());
         service.setImageAltKa(request.getImageAltKa());
         service.setImageAltEn(request.getImageAltEn());
@@ -124,6 +130,8 @@ public class ServiceService {
                 .shortDescriptionEn(service.getShortDescriptionEn())
                 .descriptionKa(service.getDescriptionKa())
                 .descriptionEn(service.getDescriptionEn())
+                .seoTitleKa(service.getSeoTitleKa()).seoTitleEn(service.getSeoTitleEn())
+                .metaDescriptionKa(service.getMetaDescriptionKa()).metaDescriptionEn(service.getMetaDescriptionEn())
                 .imageUrl(service.getImageUrl())
                 .imageAltKa(service.getImageAltKa())
                 .imageAltEn(service.getImageAltEn())

@@ -36,6 +36,11 @@ public class Service {
     @Column(columnDefinition = "TEXT")
     private String descriptionEn;
 
+    private String seoTitleKa;
+    private String seoTitleEn;
+    @Column(columnDefinition = "TEXT") private String metaDescriptionKa;
+    @Column(columnDefinition = "TEXT") private String metaDescriptionEn;
+
     private String imageUrl;
     private String imageAltKa;
     private String imageAltEn;

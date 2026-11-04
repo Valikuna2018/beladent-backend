@@ -20,6 +20,10 @@ public class ServiceResponse {
 
     private String descriptionKa;
     private String descriptionEn;
+    private String seoTitleKa;
+    private String seoTitleEn;
+    private String metaDescriptionKa;
+    private String metaDescriptionEn;
 
     private String imageUrl;
     private String imageAltKa;

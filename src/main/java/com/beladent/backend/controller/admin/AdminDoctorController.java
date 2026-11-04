@@ -28,6 +28,10 @@ public class AdminDoctorController {
             @RequestParam(required = false) String specializationEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
+            @RequestParam(required = false) String seoTitleKa,
+            @RequestParam(required = false) String seoTitleEn,
+            @RequestParam(required = false) String metaDescriptionKa,
+            @RequestParam(required = false) String metaDescriptionEn,
             @RequestParam(required = false) String imageAltKa,
             @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
@@ -44,6 +48,8 @@ public class AdminDoctorController {
         request.setSpecializationEn(specializationEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
+        request.setSeoTitleKa(seoTitleKa); request.setSeoTitleEn(seoTitleEn);
+        request.setMetaDescriptionKa(metaDescriptionKa); request.setMetaDescriptionEn(metaDescriptionEn);
         request.setImageAltKa(imageAltKa);
         request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
@@ -64,6 +70,10 @@ public class AdminDoctorController {
             @RequestParam(required = false) String specializationEn,
             @RequestParam(required = false) String descriptionKa,
             @RequestParam(required = false) String descriptionEn,
+            @RequestParam(required = false) String seoTitleKa,
+            @RequestParam(required = false) String seoTitleEn,
+            @RequestParam(required = false) String metaDescriptionKa,
+            @RequestParam(required = false) String metaDescriptionEn,
             @RequestParam(required = false) String imageAltKa,
             @RequestParam(required = false) String imageAltEn,
             @RequestParam(required = false) Integer sortOrder,
@@ -80,6 +90,8 @@ public class AdminDoctorController {
         request.setSpecializationEn(specializationEn);
         request.setDescriptionKa(descriptionKa);
         request.setDescriptionEn(descriptionEn);
+        request.setSeoTitleKa(seoTitleKa); request.setSeoTitleEn(seoTitleEn);
+        request.setMetaDescriptionKa(metaDescriptionKa); request.setMetaDescriptionEn(metaDescriptionEn);
         request.setImageAltKa(imageAltKa);
         request.setImageAltEn(imageAltEn);
         request.setSortOrder(sortOrder);
